@@ -1,0 +1,180 @@
+/* Estilos Gerais */
+body {
+  font-family: Arial, sans-serif;
+  background-color: #f2ebe3; /* Cor de fundo bege suave */
+  color: #333;
+  margin: 0;
+  padding: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+h2 {
+  color: #333; /* Preto para o título */
+  text-align: center;
+  font-size: 28px;
+  margin-top: 20px;
+}
+
+/* Estilo para o Formulário */
+form {
+  background-color: #f9f4ef; /* Bege claro */
+  padding: 20px;
+  margin: 20px auto;
+  max-width: 800px;
+  border-radius: 12px;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+  display: flex;
+  flex-direction: column;
+}
+
+form div {
+  margin-bottom: 20px;
+}
+
+form label {
+  font-size: 16px;
+  color: #333; /* Preto */
+  margin-bottom: 8px;
+  display: block;
+}
+
+form input[type="text"] {
+  width: 100%;
+  padding: 12px;
+  font-size: 16px;
+  border: 1px solid #dddddd;
+  border-radius: 6px;
+  transition: border-color 0.3s;
+}
+
+form input[type="text"]:focus {
+  border-color: #333; /* Preto */
+  outline: none;
+}
+
+form button[type="submit"] {
+  background-color: #333; /* Preto */
+  color: #f9f4ef; /* Bege claro */
+  font-size: 18px;
+  font-weight: bold;
+  padding: 12px;
+  border: none;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  align-self: flex-start; /* Alinha o botão à esquerda */
+}
+
+form button[type="submit"]:hover {
+  background-color: #555;
+}
+
+/* Estilo para a Tabela de Contatos */
+table {
+  width: 90%;
+  max-width: 800px;
+  margin: 30px auto;
+  border-collapse: collapse;
+  background-color: #f9f4ef; /* Bege claro */
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+th, td {
+  padding: 16px 20px;
+  text-align: left;
+}
+
+th {
+  background-color: #333; /* Preto */
+  color: #f9f4ef; /* Bege claro */
+  font-weight: bold;
+}
+
+td {
+  border-bottom: 1px solid #ddd;
+}
+
+tr:last-child td {
+  border-bottom: none;
+}
+
+/* Botões de Ações em Linha */
+td .actions {
+  display: flex;
+  gap: 20px; /* Espaço entre os botões */
+}
+
+button {
+  width: 100px ;
+  background-color: #333; /* Preto */
+  color: #f9f4ef; /* Bege claro */
+  border: none;
+  padding: 10px 26px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  transition: background-color 0.3s;
+  margin-bottom: 5px;
+}
+
+.create-button {
+  width: 150px;
+  background-color: #333; /* Preto */
+  color: #f9f4ef; /* Bege claro */
+  border: none;
+  padding: 10px 26px;
+  font-size: 16px;
+  border-radius: 6px;
+  cursor: pointer;
+  margin-bottom: 5px;
+}
+
+button:hover {
+  background-color: #555;
+}
+
+
+
+/* Estilos para o Modal */
+.modal {
+  position: fixed;
+  z-index: 1;
+  left: 0;
+  top: 0;
+  width: 100%;
+  height: 100%;
+  overflow: auto;
+  background-color: rgba(0, 0, 0, 0.6);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.modal-content {
+  background-color: #f9f4ef; /* Bege claro */
+  padding: 30px;
+  border-radius: 12px;
+  width: 90%;
+  max-width: 800px; /* Maior largura para o modal */
+  position: relative;
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.2);
+}
+
+.close {
+  position: absolute;
+  top: 10px;
+  right: 15px;
+  color: #333; /* Preto */
+  font-size: 24px;
+  font-weight: bold;
+  cursor: pointer;
+}
+
+.close:hover {
+  color: #000;
+}
